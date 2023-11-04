@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapSearch</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <h1>SnapSearch</h1>
+  <h2>Search Images App</h2>
+  <div class="camera-img">
+    <img src="icons8-camera-80.png" alt="camera-icon">
+  </div>
+  <div class="wrapper">
+    <input id="search-input" type="text" placeholder="Search for images" onkeydown="pressEnter(event)" >
+    <button id="search-button">Search</button>
+  </div>
+  <div id="container-result"></div>
+  <button id="more" style="display: none;">Load More</button>
+  <div>
+    <p class="info">
+      © By
+      <a  class="info-link" href="https://github.com/BeSomi22" target="_blank"> BeSomi22</a>
+    </p> 
+  </div>
+  <script src="script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+:root{
+  --color1: #fff;
+  --colorbg: #171120;
+  --color2: #bbbae9;
+  --color3: #ff83cd;
+}
+
+body{
+  background-color: var(--colorbg);
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+h1{
+  background: -webkit-linear-gradient(90deg, var(--color2) 0%, var(--color3) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 85px;
+  font-weight: 500;
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+
+h2{
+  color: var(--color1);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.camera-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.wrapper{
+  background-color: var(--color1);
+  border-radius: 30px;
+  display: flex;
+  width: 40%;
+  margin: 30px auto 20px;
+} 
+
+input{
+  width: 40%;
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+  font-size: 16px;
+}
+
+#search-button{
+  background: linear-gradient(130deg, var(--color2), var(--color3));
+  width: 120px;
+  height: 40px;
+  color: var(--color1);
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+#search-button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 var(--color1);
+}
+
+#container-result{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.images{
+  margin: 10px;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.images:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 var(--color2);
+}
+
+#more{
+  width: 120px;
+  height: 40px;
+  color: var(--colorbg);
+  border-radius: 30px;
+  font-size: 16px;
+  margin: 30px auto 30px;
+  background-color: var(--color2);
+  border: none;
+}
+
+#more:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 0 var(--color3);
+}
+
+@media (max-width:500px){
+  h1{
+    font-size: 55px;
+  }
+  h2{
+    font-size: 25px;    
+  }
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap: 20px;
+  }
+  input{
+    background-color: var(--color1);
+    width: max-content;
+    margin: auto;
+  }
+}
+
+.info{
+  color: var(--color1);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.info a{
+  text-decoration: none;
+  color: var(--color1);
+}
+
+.info a:hover{
+  cursor: pointer;
+  color:var(--color2);
+}
